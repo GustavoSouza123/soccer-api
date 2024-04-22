@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" /> <!-- css -->
+    <script src="https://cdn.api-futebol.com.br/widgets/v1/apifutebol-tabela.js"></script> <!-- API Futebol Widget Script -->
+    <title>Soccer Stats</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Soccer Stats</h1>
+        <div class="widgets">
+            <h3>Tabelas</h3>
+            <div class="btns">
+                <button class="btn active serie-a-btn" onclick="toggleWidget()">Serie A</button>
+                <button class="btn serie-b-btn" onclick="toggleWidget()">Serie B</button>
+            </div>
+            <div class="content">
+                <div class="widget serie-a active apifutebol-tabela" data-client-id="X67CN3JRKRP5"></div>
+                <div class="widget serie-b apifutebol-tabela" data-client-id="JP7PMN3JJ3S3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
